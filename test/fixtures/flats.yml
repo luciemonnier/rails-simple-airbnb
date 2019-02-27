@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  address: MyString
+  number_of_guests: 1
+  price_per_night: 1
+
+two:
+  name: MyString
+  description: MyText
+  address: MyString
+  number_of_guests: 1
+  price_per_night: 1

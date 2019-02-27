@@ -1,0 +1,49 @@
+<div class="show-cards">
+  <div class="show-card name-card">
+    <h1><%= @flat.name %></h1>
+    <h5><%=@flat.address %></h5>
+  </div>
+
+  <div class="show-card description-card">
+    <h3>A bit more about this flat...</h3>
+    <h5><%= @flat.description %></h5>
+  </div>
+
+  <div class="show-card booking-card">
+    <h3>Book this place!</h3>
+    <form action="#" class="text-center">
+      <div class="input-group">
+        <span class="input-group-addon">From:</span>
+        <input type="text" class="form-control" placeholder="06/10/1994">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon">To</span>
+        <input type="text" class="form-control" placeholder="09/09/1995">
+      </div>
+      <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+    </form>
+  </div>
+
+  <div class="show-card details-card">
+    <h3>Details</h3>
+    <ul class="list-inline">
+      <li>
+        <%= @flat.number_of_guests %>
+        <i class="fas fa-user"></i>
+      </li>
+      <li>
+        <%= @flat.price_per_night %>
+        <i class="fas fa-euro-sign"></i>
+      </li>
+    </ul>
+  </div>
+
+  <div class="show-card share-card">
+    <h3>Share</h3>
+    <div class="link-list">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</div>

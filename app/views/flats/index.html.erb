@@ -1,0 +1,39 @@
+<h1 class="index-title title">All our Flats (<%= @flats.length %>)</h1>
+
+<div class="index-cards row">
+  <% @flats.each do |flat| %>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="index-card">
+        <div class="card-image" style="background-image: url(<%= asset_path ['flat1.jpeg', 'flat2.jpeg', 'flat3.jpeg', 'flat4.jpeg', 'flat5.jpeg', 'flat6.jpeg'].sample %>)">
+        </div>
+        <div class="index-card-top">
+          <h3><%= flat.name %></h3>
+          <p><%= flat.address %></p>
+          <ul class="list-inline">
+            <li>
+              <%= flat.number_of_guests %>
+              <i class="fas fa-user"></i>
+            </li>
+            <li>
+              <%= flat.price_per_night %>
+              <i class="fas fa-euro-sign"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="index-card-bottom">
+          <ul class="list-inline">
+            <li>
+              <%= link_to "More info", flat_path(flat)%>
+            </li>
+            <li>
+              <%= link_to "Edit", edit_flat_path(flat)%>
+            </li>
+            <li>
+              <%= link_to "Delete", flat_path(flat), method: :delete %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

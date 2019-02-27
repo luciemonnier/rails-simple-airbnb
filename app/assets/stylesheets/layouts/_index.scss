@@ -1,0 +1,14 @@
+body {
+  background-color: white;
+}
+
+.photo-wrapper {
+  background-image: url('flat-image.jpg');
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+}// Import your layouts CSS files here.
+// Examples:
+// @import "dashboard";
+// @import "profile";
+// @import "map";

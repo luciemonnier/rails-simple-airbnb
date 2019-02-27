@@ -1,0 +1,104 @@
+.index-card {
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+  border-radius: 4px;
+  margin: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.index-card-top {
+  padding: 5px;
+  background-color: #ededed;
+  height: 100px;
+  h3 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  ul {
+    margin-bottom: 2px;
+    li {
+      font-size: 12px;
+    }
+  }
+
+}
+
+.index-card-bottom {
+  background-color: white;
+  padding: 5px;
+}
+
+.show-cards {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 220px 150px 100px 1fr;
+  height: 200vh;
+  margin-top: -100px;
+}
+
+.show-card {
+  background-color: white;
+  border-radius: 4px;
+  margin: 20px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.description-card {
+  grid-row : 2 / span 3;
+  grid-column: 1 / span 1;
+}
+
+.name-card {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.details-card {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.card-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+.share-card {
+  display: flex;
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.share-card > h3 {
+  margin-top: 10px;
+}
+
+.link-list {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-list > a {
+  margin-left:10px;
+}
+
+.link-list > a > i {
+  font-size: 30px;
+}
+
+.booking-card > h3 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+.input-group {
+  margin: 5px;
+}
